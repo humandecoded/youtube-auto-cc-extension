@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Auto CC",
+  "version": "1.0",
+  "description": "Automatically enable closed captions on YouTube videos.",
+  "permissions": ["storage", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
