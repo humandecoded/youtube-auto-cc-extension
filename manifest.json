@@ -4,6 +4,9 @@
   "version": "1.0",
   "description": "Automatically enable closed captions on YouTube videos.",
   "permissions": ["storage", "scripting"],
+  "browser_specific_settings": {
+    "gecko": { "id": "youtube-auto-cc@example.com" }
+  },
   "action": {
     "default_popup": "popup.html"
   },
